@@ -3,9 +3,9 @@ module "snowflake" {
   version = "0.1.2"
 
   providers = {
-    sys_admin = snowflake.sys_admin,
-    security_admin = snowflake.security_admin,
-    account_admin = snowflake.account_admin
+    snowflake.sysadmin = snowflake.sysadmin
+    snowflake.securityadmin = snowflake.securityadmin
+    snowflake.accountadmin = snowflake.accountadmin 
   }
 
   role_name = "test_role"
